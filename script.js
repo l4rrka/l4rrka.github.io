@@ -53,12 +53,12 @@ const close = document.querySelector('#close-nav-mobile');
 
 function showSidebar(){
   sidebar.style.display = 'flex';
-  close.style.display = 'block';
+  close.style.display = 'flex';
   close.style.zIndex = '999';
   menu.style.display = 'none';
 }
 function hideSidebar(){
   sidebar.style.display = 'none';
   close.style.display = 'none';
-  menu.style.display = 'block';
+  menu.style.display = 'flex';
 }
