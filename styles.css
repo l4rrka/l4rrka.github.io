@@ -182,12 +182,14 @@ header{
 
 @media(max-width: 800px){
   #primary-nav-mobile{
-    display: flex;
+    display: block;
   }
 
-  #primary-nav-mobile > svg, #close-nav-mobile > svg {
+  #primary-nav-mobile, #close-nav-mobile {
+    margin: 0;
     height: 6vw;
-    align-items: right;
+    margin-left: auto;
+    width: fit-content;
   }
 }
 .primary-navbar-laptop > li {
@@ -200,7 +202,7 @@ header{
 }
 
 @media(max-width: 500px){
-  #primary-nav-mobile > svg, #close-nav-mobile > svg{
+  #primary-nav-mobile, #close-nav-mobile {
     height: 8vw;
   }
 }
