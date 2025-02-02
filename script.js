@@ -17,7 +17,7 @@ fetch('videos.json')
       const videoDiv = document.createElement("div");
       const videoElement = document.createElement("video");
       videoElement.setAttribute("controls", "");
-      videoElement.setAttribute("preload", "metadata");
+      //videoElement.setAttribute("preload", "metadata");
       const source = document.createElement("source");
       source.setAttribute("src", video.src);
       source.setAttribute("type", "video/mp4");
