@@ -1,0 +1,260 @@
+:root {
+  --primary-font-1: "Bona Nova SC", serif;
+  --primary-font-2: 'Kanit', serif;
+
+  --primary-size-200: 1em;
+  --primary-size-500: 2em;
+  --primary-size-700: 4em;
+  --primary-size-400: 1.3em;
+
+  --primary-color-457: #457457;
+  --primary-color-754: #754754;
+  --primary-color-100: white;
+  --primary-color-accent-100: #f0e47f;
+  --primary-color-accent-700: #9c8b2c;
+}
+
+.primary-font-1{
+  font-family: var(--primary-font-1);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.primary-font-2{
+  font-family: var(--primary-font-2);
+  font-weight: 300;
+  font-style: normal;
+}
+
+.primary-font-3{
+  font-family: var(--primary-font-2);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.primary-size-200{
+  font-size: var(--primary-size-200);
+}
+
+.primary-size-400{
+  font-size: var(--primary-size-400);
+}
+
+.primary-size-500{
+  font-size: var(--primary-size-500);
+}
+
+.primary-size-700{
+  font-size: var(--primary-size-700);
+}
+
+/*@media(min-width: 800px){
+  html {
+    scroll-behavior: smooth;
+  }
+}*/
+
+body{
+  margin: 0;
+
+  background-image: linear-gradient(#457457, #754754);
+  border-right: 10vw solid rgba(0, 0, 0, 0.2);
+  border-left: 10vw solid rgba(0, 0, 0, 0.2);
+}
+
+@media(max-width: 800px){
+  body{
+    border: none;
+    margin: 0 8px 0 8px;
+  }
+}
+
+header{
+  margin: 0;
+  position: sticky;
+  top: 0;
+  background-color: rgba(69, 116, 87, 0.8);
+  z-index: 999;
+}
+
+@media(max-width: 800px){
+  header{
+    background-color: transparent;
+  }
+}
+
+#primary-nav-mobile, #close-nav-mobile {
+  display: none;
+}
+
+.hello-message{
+  max-width: 70%;
+  margin-left: auto;
+  margin-right:auto;
+  margin-bottom: 2vw;
+  margin-top: 2vw;
+  color: var(--primary-color-100);
+}
+
+@media(max-width: 800px){
+  .hello-message{
+    max-width: 85%;
+  }
+}
+
+@media(max-width: 500px){
+  .hello-message{
+    font-size: 13px;
+  }
+}
+
+.primary-heading{
+  margin: 0 2vw 0 2vw;
+  text-align: center;
+  color: #f0e47f;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.2);
+  /*text-shadow: 4px 4px #9c8b2c;*/
+  border-top: 5px solid rgba(0, 0, 0, 0.2);
+}
+
+@media(max-width: 800px){
+  .primary-heading{
+    font-size: 3em;
+  }
+  
+}
+
+@media(max-width: 500px)
+{
+  .primary-heading{
+    font-size: 2.2em;
+    margin-bottom: 5vw;
+  }
+}
+
+.secondary-heading{
+  color: var(--primary-color-accent-100);
+  text-align: center;
+  margin-bottom: 3vw;
+}
+
+.primary-navbar-laptop{
+  display: flex;
+  gap: 5vw;  
+  margin: 0;
+  padding: 10px;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.primary-navbar-laptop > li > a:hover{
+  color: var(--primary-color-accent-100);
+}
+
+@media(max-width: 800px){
+  .primary-navbar-laptop{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: -1;
+    background-color: rgba(40, 66, 50, 0.9);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: var(--primary-font-1);
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 10vw;
+  }
+
+  .primary-navbar-laptop > li > a {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
+
+@media(max-width: 800px){
+  #primary-nav-mobile{
+    display: block;
+  }
+
+  #primary-nav-mobile, #close-nav-mobile {
+    margin: 0;
+    height: 6vw;
+    margin-left: auto;
+    width: fit-content;
+  }
+}
+.primary-navbar-laptop > li {
+  flex: 0 0 auto; 
+}
+
+.primary-navbar-laptop > li > a {
+  text-decoration: none;
+  color: white;
+}
+
+@media(max-width: 500px){
+  #primary-nav-mobile, #close-nav-mobile {
+    height: 8vw;
+  }
+}
+
+
+.wrapper{
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+@media(max-width: 500px){
+  .wrapper{
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+}
+
+.video-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5vw;
+  margin-bottom: 3vw;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  color: var(--primary-color-100);
+}
+
+.video-card > div > video{
+  max-width: 45vw;
+  max-height: 70vh;
+  height: auto;
+}
+
+@media(max-width: 800px){
+
+  .video-card > div > video{
+    max-width: 70vw;
+  }
+
+  .video-card > div > h3{
+    font-size: var(--primary-size-200);
+  }
+}
+
+@media(max-width: 500px){
+
+  .video-card > div > video{
+    max-width: 80vw;
+  }
+
+  .video-card > div > h3{
+    font-size: 14px;
+  }
+}
