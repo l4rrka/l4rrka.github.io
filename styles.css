@@ -188,7 +188,7 @@ header{
   #primary-nav-mobile, #close-nav-mobile {
     margin: 0;
     height: 6vw;
-    margin-right: auto;
+    margin-left: auto;
   }
 }
 .primary-navbar-laptop > li {
