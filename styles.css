@@ -182,13 +182,13 @@ header{
 
 @media(max-width: 800px){
   #primary-nav-mobile{
-    display: flex;
+    display: block;
   }
 
   #primary-nav-mobile, #close-nav-mobile {
     margin: 0;
     height: 6vw;
-    align-items: left;
+    margin-left: auto;
     width: fit-content;
   }
 }
