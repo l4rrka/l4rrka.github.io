@@ -104,7 +104,7 @@ header{
 
 @media(max-width: 500px){
   .hello-message{
-    font-size: 13px;
+    font-size: var(--primary-size-200);
   }
 }
 
